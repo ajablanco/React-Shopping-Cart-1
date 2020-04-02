@@ -31,7 +31,7 @@ class Cart extends Component{
                                 
                                     <div className="item-desc">
                                         <span className="title">{item.title}</span>
-                                        <p>{item.desc}</p>
+                                        {/* <p>{item.desc}</p> */}
                                         <p><b>Price: {item.price}$</b></p> 
                                         <p>
                                             <b>Quantity: {item.quantity}</b> 
@@ -50,7 +50,7 @@ class Cart extends Component{
             ):
 
              (
-                <p>Nothing.</p>
+                <p style={{textAlign:"center"}}> You haven't selected anything yet!</p>
              )
        return(
             <div className="container">

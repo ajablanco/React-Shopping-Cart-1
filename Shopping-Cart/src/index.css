@@ -1,8 +1,11 @@
 .box{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
+
 .material-icons{
     font-size: 2.4em;
     cursor: pointer;
@@ -11,7 +14,7 @@
     width: 300px;
 }
 .card .card-image .card-title{
-    color: black;
+    color: white;
     font-weight: 400
 }
 .cart{
@@ -19,19 +22,96 @@
 }
 .collection .collection-item{
     display: flex;
+    max-width: 100%;
 }
 .collection-item.avatar .title {
     font-size: 20px;
     font-weight: 500;
-    color: #ee6e73;
+    color: rgb(250,236,230)!important;
     display: block;
     margin-bottom: 20px;
     
 }
 .collection .collection-item img{
-    width: 150px;
+    width: 300px;
     margin-right: 25px;
 }
 .item-desc{
     align-self:center;
 }
+
+.card-img-test img {
+    max-height: 200px!important;
+}
+
+nav {
+    background-color: rgb(250,236,230)!important;
+
+}
+
+nav i {
+    margin-top: 3%;
+}
+
+a {
+    color: green!important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem!important;
+}
+
+body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  nav a {
+    font-size: 1.5rem;
+    letter-spacing: 2pt;
+    font-family: "OSWALD";
+    font-weight: 400;
+  }
+  
+  .wrapper {
+    position: relative;
+    padding-top: 56.25%;
+  }
+  
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: brightness(60%);
+  }
+  
+  .CTA {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Montserrat";
+  }
+    button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  .brand-logo {
+      left: 0!important;
+      margin-left: 3%;
+  }

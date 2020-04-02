@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Cart from './components/Cart'
+import HomePage from "./components/HomePage"
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
             
               <Navbar/>
                 <Switch>
-                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/" component={HomePage}/>
+                    <Route path="/shop" component={Home}/>
                     <Route path="/cart" component={Cart}/>
                   </Switch>
              </div>
